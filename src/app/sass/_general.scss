@@ -12,6 +12,8 @@ $font: 'Inconsolata', monospace;
 
 html, body {
     font-size: 62.5%;
+    height: 100vh;
+    background-color: $primary-bg;
 }
 
 ul, li {
