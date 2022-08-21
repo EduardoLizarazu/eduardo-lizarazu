@@ -1,0 +1,28 @@
+.navbar-container {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: $font;
+    font-size: 2rem;
+    color: $primary-color;
+
+    .logo {
+        
+    }
+    .navbar--item-container {
+        display: flex;
+        gap: 30px;
+        .navbar--item {
+            a {
+                color: $primary-color;
+            }
+            a:hover {
+                color: $secondary-color;
+                text-decoration: underline;
+            }
+        }
+    }
+}
