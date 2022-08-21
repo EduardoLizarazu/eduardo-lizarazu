@@ -1,11 +1,13 @@
 .header-container {
+    grid-column: 2 / span 1;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     height: 100%;
     width: 100%;
-    padding: 0 50px;
+    // padding: 0 50px;
 
     font-family: $font;
     font-size: 2rem;
