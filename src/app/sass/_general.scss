@@ -3,6 +3,22 @@ $secondary-color : #30e892;
 $primary-bg: #23272d;
 $font: 'Inconsolata', monospace;
 
+@mixin navbar_font {
+    font-family: $font;
+    font-size: 2rem;
+    color: $primary-color;
+}
+@mixin title_font {
+    font-family: $font;
+    font-size: 5rem;
+    color: $primary-color;
+}
+@mixin body_font {
+    font-family: $font;
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: $primary-color;
+}
 
 * {
     box-sizing: border-box;
