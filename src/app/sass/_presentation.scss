@@ -28,6 +28,7 @@
         p {
             font-family: $font;
             font-size: 1.7rem;
+            font-weight: 300;
             color: $primary-color;
         }
         .presentation-button--container {
@@ -53,3 +54,21 @@
         
     }
 }
+
+.media-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+    .media-item {
+        a {
+            font-family: $font;
+            font-size: 2rem;
+            color: $primary-color;
+            opacity: .5;
+        }
+    }
+}
+
