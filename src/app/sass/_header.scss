@@ -1,28 +1,11 @@
 .header-container {
-    height: 80px;
+    height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 50px;
 
     font-family: $font;
     font-size: 2rem;
+    color: $primary-color;
 
     background-color: $primary-bg;
-    &--logo {
-        color: $primary-color;
-    }
-    nav .nav {
-        display: flex;
-        gap: 30px;
-        .nav-item {
-            a {
-                color: $primary-color;
-            }
-            a:hover {
-                color: $secondary-color;
-            }
-        }
-    }
 }
