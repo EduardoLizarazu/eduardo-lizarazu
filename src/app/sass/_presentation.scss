@@ -1,19 +1,14 @@
-.main {
-    
-    padding: 40px 50px;
+.presentation-container {
+    // padding: 40px 50px;
     font-size: 2rem;
     background-color: $primary-bg;
     color: $primary-color;
-    .presentation-container {
-        height: 100%;
-        &--left {
-
-            .presentation-button--container {
-                
-            }
+    
+    &--left {
+        .presentation-button--container {
+            
         }
-        &--right {
-
-        }
+    }
+    &--right {
     }
 }
