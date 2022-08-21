@@ -1,10 +1,16 @@
+$primary-color: #fff;
+$secondary-color : #30e892;
+$primary-bg: #23272d;
+$font: 'Inconsolata', monospace;
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html {
+html, body {
     font-size: 62,5%;
 }
 
