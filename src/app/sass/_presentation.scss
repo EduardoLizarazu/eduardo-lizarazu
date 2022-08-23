@@ -20,6 +20,17 @@
         gap: 20px;
         h2 {
             @include title_font;
+            .typed-text {
+                color: $secondary-color;
+            }
+            .cursor {
+                display: inline-block;
+                width: 3px;
+                background-color: #ccc;
+                margin-left: .1px;
+                opacity: 1;
+                animation: blink 1s infinite;
+            }
         }
         p {
             @include body_font;
@@ -65,5 +76,13 @@
             text-decoration: underline;
         }
     }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    49% { opacity: 1; }
+    50% { opacity: 0; }
+    99% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
