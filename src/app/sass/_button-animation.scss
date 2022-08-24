@@ -1,0 +1,106 @@
+$linear-size : 3px;
+
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    font-family: $font;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.presentation-button--container {
+    cursor: pointer;
+    margin-top: 20px;
+    // padding: 15px 20px;
+    height: 60px;
+    width: 170px;
+    background-color: $secondary-color;
+    position: relative;
+    transition: 500ms ease;
+}
+
+// upper-side button
+.presentation-button--container:before {
+    position: absolute;
+    width: 0;
+    height: $linear-size;
+    content: "";
+    background: #fff;
+    top: -2px;
+    left: -2px;
+    transition: 100ms width ease 300ms;
+}
+// right-side button
+.presentation-button--container:after {
+    position: absolute;
+    width: $linear-size;
+    height: 0;
+    content: "";
+    background: #fff;
+    top: -2px;
+    right: -2px;
+    transition: 100ms height ease 200ms;
+}
+// down-side button
+.box-inner:after {
+    position: absolute;
+    width: 0;
+    height: $linear-size;
+    content: "";
+    background: #fff;
+    bottom: -2px;
+    right: -2px;
+    transition: 100ms width ease 100ms;
+}
+// left-side button
+.box-inner:before {
+    position: absolute;
+    width: $linear-size;
+    height: 0;
+    content: "";
+    background: #fff;
+    bottom: -2px;
+    left: -2px;
+    transition: 100ms height ease 0ms;
+}
+
+.presentation-button--container:hover {
+    border-color: transparent;
+    background: $special-degradation;
+}
+.presentation-button--container:hover button {
+    color: #fff;
+}
+// upper-side button
+.presentation-button--container:hover:before {
+    width: 402px;
+    width: 171px;
+    transition: 100ms width ease 0ms;
+}
+// right-side button
+.presentation-button--container:hover:after {
+    height: 252px;
+    height: 61px;
+    transition: 100ms height ease 100ms;
+}
+// down-side button
+.presentation-button--container:hover .box-inner:after {
+    width: 402px;
+    width: 171px;
+    transition: 100ms width ease 200ms;
+}
+// right-side button
+.presentation-button--container:hover .box-inner:before {
+    height: 252px;
+    height: 61px;
+    transition: 100ms height ease 300ms;
+}
+
+
+
+

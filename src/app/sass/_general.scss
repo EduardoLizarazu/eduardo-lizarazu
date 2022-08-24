@@ -2,6 +2,7 @@ $primary-color: #fff;
 $secondary-color : #30e892;
 $primary-bg: #23272d;
 $font: 'Inconsolata', monospace;
+$special-degradation : #0e4028;
 
 @mixin navbar_font {
     font-family: $font;
