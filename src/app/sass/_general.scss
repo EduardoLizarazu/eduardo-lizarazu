@@ -14,6 +14,14 @@ $special-degradation : #0e4028;
     font-size: 5rem;
     color: $primary-color;
 }
+@mixin subtitle_font {
+    font-family: $font;
+    font-size: 4rem;
+    font-weight: 500;
+    color: $primary-color;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
 @mixin body_font {
     font-family: $font;
     font-size: 1.7rem;

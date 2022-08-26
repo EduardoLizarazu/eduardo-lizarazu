@@ -1,0 +1,55 @@
+.service-section {
+    width: 100%;
+    height: auto;
+    h3 {
+        @include subtitle_font;
+    }
+    .service-types {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        @include body_font;
+        .service-card {
+            cursor: pointer;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            height: 350px;
+            width: 250px;
+            padding: 25px;
+            border-radius: 25px;
+            background-color: #333;
+            .service-card--icon {
+                max-width: 85px;
+                max-height: 85px;
+                img {
+                    object-fit: cover;
+                    width: 100%
+                }
+            }
+            .service-card--title {
+                @include title_font;
+                font-size: 3rem;
+                text-align: center;
+            } 
+            .service-card--details {
+                @include body_font;
+                text-align: center;
+            }
+
+            // .service-card--button {
+            //     button {
+
+            //     }
+            // }
+        }
+    }
+}

@@ -1,5 +1,7 @@
 .download-cv--container {
     @include button_size;
+    height: 45px;
+    width: 215px;
     display: flex;
     align-items: center;
     justify-content: center;

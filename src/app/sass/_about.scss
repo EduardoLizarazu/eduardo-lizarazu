@@ -4,12 +4,7 @@
 }
 .about-section {
     h3 {
-        font-family: $font;
-        font-size: 4rem;
-        font-weight: 400;
-        color: $primary-color;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        @include subtitle_font;
     }
 }
 .about-container {
