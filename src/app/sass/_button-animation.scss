@@ -2,11 +2,9 @@ $linear-size : 3px;
 
 
 button {
+    @include button_letter;
     cursor: pointer;
     background-color: transparent;
-    font-family: $font;
-    font-size: 2rem;
-    font-weight: 500;
     color: #000;
     width: 100%;
     height: 100%;
@@ -14,11 +12,9 @@ button {
 }
 
 .presentation-button--container {
+    @include button_size;
     cursor: pointer;
-    margin-top: 20px;
     // padding: 15px 20px;
-    height: 60px;
-    width: 170px;
     background-color: $secondary-color;
     position: relative;
     transition: 500ms ease;

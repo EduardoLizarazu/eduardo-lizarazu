@@ -1,0 +1,19 @@
+.download-cv--container {
+    @include button_size;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    outline: 4px solid $secondary-color;
+    a {
+        @include button_letter;
+        color: $secondary-color;
+    }    
+}
+.download-cv--container:hover {
+    outline: 4px solid $special-degradation;
+    a {
+        color: $special-degradation;
+    }
+}
