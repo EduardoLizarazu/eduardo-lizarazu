@@ -12,7 +12,7 @@ let charIndex = 0;
 
 function type() {
     if(charIndex < textArray[textArrayIndex].length) {
-        typeTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+        typeTextSpan.innerHTML += textArray[textArrayIndex].charAt(charIndex);
         charIndex++;
         setTimeout(type, typingDelay);
     } else {
@@ -22,7 +22,7 @@ function type() {
 
 function erase() {
     if (charIndex > 0) {
-        typeTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+        typeTextSpan.innerHTML = textArray[textArrayIndex].substring(0, charIndex-1);
         charIndex--;
         setTimeout(erase, erasingDelay);
     } else {
