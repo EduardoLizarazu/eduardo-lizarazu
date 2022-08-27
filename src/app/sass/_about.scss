@@ -3,8 +3,10 @@
     grid-row: 2 / span 1;
 }
 .about-section {
+    margin-top: 90px;
     h3 {
         @include subtitle_font;
+        margin-top: 0;
     }
 }
 .about-container {

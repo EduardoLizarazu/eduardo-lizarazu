@@ -12,7 +12,6 @@
         justify-content: space-around;
         gap: 60px;
         align-items: center;
-        transform: translateY(0);
         @include body_font;
         .service-card {
             cursor: pointer;
@@ -55,7 +54,11 @@
         }
     }
 }
-
+.service-card {
+    outline: none;
+    transform: translateY(0);
+    transition: transform .5s ;
+}
 .service-card:hover {
     transform: translateY(-20px);
     outline: 3px solid #fff;
