@@ -25,7 +25,7 @@ $special-degradation : #0e4028;
 }
 @mixin body_font {
     font-family: $font;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 300;
     color: $primary-color;
 }
@@ -68,4 +68,17 @@ a {
     grid-template-rows: 100% 1fr;
     height: 100%;
     width: 100%;
+}
+input, textarea {
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    @include body_font;
+}
+
+input:focus {
+    outline: none;
 }
